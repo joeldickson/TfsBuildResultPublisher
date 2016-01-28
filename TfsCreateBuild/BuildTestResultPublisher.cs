@@ -10,8 +10,8 @@ namespace TfsBuildResultPublisher
         {
             var paths = new[]
                 {
-                    @"C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\MSTest.exe",
-                    @"C:\Program Files\Microsoft Visual Studio 11.0\Common7\IDE\MSTest.exe"
+                    @"C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\MSTest.exe",
+                    @"C:\Program Files\Microsoft Visual Studio 14.0\Common7\IDE\MSTest.exe"
                 };
             var msTest = File.Exists(paths[0]) ? paths[0] : paths[1];
             const string argsFormat = "/publish:\"{0}\" /publishresultsfile:\"{1}\" /teamproject:\"{2}\" /publishbuild:\"{3}\" /platform:\"{4}\" /flavor:\"{5}\"";
